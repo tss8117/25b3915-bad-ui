@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Volume Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Volume Control</h1>
+  <p class="subtitle">Professional Audio Management System™</p>
+
+  <!-- The main box -->
+  <div class="arena">
+
+    <!-- Left side: the icon you hold -->
+    <div class="left-side">
+      <div class="icon" id="icon">🔊</div>
+      <p class="hint">Hold the icon to charge</p>
+    </div>
+
+    <!-- Right side: where the ball flies -->
+    <div class="right-side" id="rightSide">
+
+      <!-- The ball -->
+      <div class="ball" id="ball"></div>
+
+      <!-- The slider at the bottom -->
+      <div class="slider" id="slider">
+        <div class="slider-fill" id="sliderFill"></div>
+      </div>
+
+      <!-- Labels under the slider -->
+      <div class="slider-labels">
+        <span>0</span>
+        <span>25</span>
+        <span>50</span>
+        <span>75</span>
+        <span>100</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Volume number -->
+  <div class="volume-box">
+    Current Volume: <span class="volume-number" id="volumeNumber">??</span>%
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
